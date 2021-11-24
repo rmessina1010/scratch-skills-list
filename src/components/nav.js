@@ -7,6 +7,7 @@ const Nav = function (props) {
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/me">Me</NavLink></li>
             <li><NavLink to="/you">You</NavLink></li>
+            <li><NavLink to="/hoc">hoc</NavLink></li>
         </ul>
     )
 }

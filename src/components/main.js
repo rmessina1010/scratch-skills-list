@@ -1,6 +1,7 @@
 import { Navigate, Routes, Route } from "react-router-dom";
 import Comp from './comp'
 import SkillSet from './skill'
+import ConsumerWithHOC from './consume'
 import { Clicker } from './clicker'
 import Nav from './nav'
 
@@ -14,6 +15,7 @@ export const Main = function (props) {
             <Route path="/me" element={<SkillSet user="Ray" uid={105} />} />
             <Route path="/me/too" element={<Comp />} />
             <Route path="/you" element={<Clicker />} />
+            <Route path="/hoc" element={<ConsumerWithHOC />} />
             <Route path="/*" element={<p>firsrt default reroute!</p>} />
             <Route path="/*" element={<Navigate replace to='/about' />/*is skipped*/} />
         </Routes>
